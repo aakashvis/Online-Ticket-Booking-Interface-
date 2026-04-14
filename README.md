@@ -20,7 +20,7 @@ CSS3
 JavaScript 
 
 # 🚀 How to Run
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/aakashvis/Online-Ticket-Booking-Interface-.git
 cd your-repo-name
 open index.html
 # 📂 Project Structure
