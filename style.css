@@ -1,0 +1,99 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  margin: 0;
+  color: white;
+}
+
+/* Glassmorphism Card */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+/* Buttons */
+button {
+  width: 48%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button[type="submit"] {
+  background: #00c6ff;
+}
+
+button[type="button"] {
+  background: #ff4b5c;
+  float: right;
+}
+
+/* Receipt Animation */
+.receipt {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background: white;
+  color: black;
+  animation: slideUp 0.5s ease;
+}
+
+/* Dropdown suggestions */
+.suggestions {
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 8px;
+  max-height: 120px;
+  overflow-y: auto;
+  position: absolute;
+  width: 90%;
+}
+
+.suggestions div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions div:hover {
+  background: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(20px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}

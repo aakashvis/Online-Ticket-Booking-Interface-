@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flight & Train Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>✈️🚆 Ticket Booking</h1>
+
+<form id="bookingForm">
+
+    <label>Booking Type:</label>
+    <select id="type" onchange="updateOptions()">
+    <option value="Flight">Flight</option>
+    <option value="Train">Train</option>
+    </select>
+
+    <label>Passenger Name:</label>
+    <input type="text" id="name" required>
+
+    <label>From:</label>
+<div style="position:relative;">
+  <input type="text" id="from" required>
+</div>
+
+<label>To:</label>
+<div style="position:relative;">
+  <input type="text" id="to" required>
+</div>
+
+    <label>Date:</label>
+    <input type="date" id="date" required>
+
+    <label id="classLabel">Class:</label>
+    <select id="class"></select>
+
+    <button type="submit">Book Ticket</button>
+    <button type="button" onclick="resetForm()">Reset</button>
+
+</form>
+
+<div id="receipt" class="receipt"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
